@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <link rel="stylesheet" href="Nomor2.css">
+	<title>Halaman 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <SCRIPT LANGUAGE="JavaScript">
+        if(hitung=true){
+        if(waktu < 7){
+            Hasil.value = pinjaman.value + (pinjaman.value*2/100 * waktu.value);
+        }
+        else if (waktu < 13){
+            Hasil.value = pinjaman.value +(pinjaman.value * 1.5/100 * waktu.value);
+        }
+        else if (waktu > 12){
+            Hasil.value = pinjaman.value + (pinjaman.value *1/100 * waktu.value);
+        }}
+        </SCRIPT>
+
+</head>
+
+<body>
+	<div data-role="page">
+
+        <div data-role="header"data-theme="b">
+            <h1>Pengisian Pinjaman</h1>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <label for="pinjaman">Pinjaman:</label>
+        <input type="text" name="name" id="pinjaman" value="">
+            <label for="waktu">Waktu Pinjaman:</label>
+        <input type="text" name="name" id="waktu" value="">
+        <button class ="hitung">Calculate</button>
+        <label for="Hasil">Total</label>
+    </div><!-- /content -->
+    
+    <div data-role="footer" data-theme = "b">
+            <a href="C:\Users\Danny\Desktop\Nomor 2 UTS PPM\Nomor 2 Halaman 2.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+        </div>
+            </div>
+</body>
+</html>
